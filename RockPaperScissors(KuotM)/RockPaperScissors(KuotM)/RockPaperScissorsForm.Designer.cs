@@ -1,6 +1,6 @@
 ﻿namespace RockPaperScissors_KuotM_
 {
-    partial class Form1
+    partial class RockPaperScissorsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // RockPaperScissorsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(339, 298);
+            this.Name = "RockPaperScissorsForm";
+            this.Text = "Rock Paper Scissors!";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
