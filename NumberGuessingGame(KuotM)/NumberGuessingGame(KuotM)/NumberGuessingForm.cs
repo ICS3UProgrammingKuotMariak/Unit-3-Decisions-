@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NumberGuessingGame_KuotM_
 {
-    public partial class Form1 : Form
+    public partial class NumberGuessingForm : Form
     {
-        public Form1()
+        public NumberGuessingForm()
         {
             InitializeComponent();
         }
