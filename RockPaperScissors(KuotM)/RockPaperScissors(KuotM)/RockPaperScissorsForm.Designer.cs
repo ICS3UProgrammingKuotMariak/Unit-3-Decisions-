@@ -28,56 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picRock = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picUserRock = new System.Windows.Forms.PictureBox();
+            this.picUserPaper = new System.Windows.Forms.PictureBox();
+            this.picUserScissors = new System.Windows.Forms.PictureBox();
             this.lblStateOptions = new System.Windows.Forms.Label();
             this.lblStateCpuChoice = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picCPUScissors = new System.Windows.Forms.PictureBox();
+            this.picCPUPaper = new System.Windows.Forms.PictureBox();
+            this.picCPURock = new System.Windows.Forms.PictureBox();
             this.lblStateWinner = new System.Windows.Forms.Label();
             this.mnuRockPaperScissors = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.btnReset = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserRock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserPaper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserScissors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUScissors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUPaper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPURock)).BeginInit();
             this.mnuRockPaperScissors.SuspendLayout();
             this.SuspendLayout();
             // 
-            // picRock
+            // picUserRock
             // 
-            this.picRock.Image = global::RockPaperScissors_KuotM_.Properties.Resources.rock;
-            this.picRock.Location = new System.Drawing.Point(12, 91);
-            this.picRock.Name = "picRock";
-            this.picRock.Size = new System.Drawing.Size(180, 154);
-            this.picRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picRock.TabIndex = 0;
-            this.picRock.TabStop = false;
+            this.picUserRock.Image = global::RockPaperScissors_KuotM_.Properties.Resources.rock;
+            this.picUserRock.Location = new System.Drawing.Point(12, 91);
+            this.picUserRock.Name = "picUserRock";
+            this.picUserRock.Size = new System.Drawing.Size(180, 154);
+            this.picUserRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUserRock.TabIndex = 0;
+            this.picUserRock.TabStop = false;
+            this.picUserRock.Click += new System.EventHandler(this.picRock_Click);
             // 
-            // pictureBox2
+            // picUserPaper
             // 
-            this.pictureBox2.Image = global::RockPaperScissors_KuotM_.Properties.Resources.paper;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 91);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(178, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.picUserPaper.Image = global::RockPaperScissors_KuotM_.Properties.Resources.paper;
+            this.picUserPaper.Location = new System.Drawing.Point(219, 91);
+            this.picUserPaper.Name = "picUserPaper";
+            this.picUserPaper.Size = new System.Drawing.Size(178, 154);
+            this.picUserPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUserPaper.TabIndex = 1;
+            this.picUserPaper.TabStop = false;
+            this.picUserPaper.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // picUserScissors
             // 
-            this.pictureBox3.Image = global::RockPaperScissors_KuotM_.Properties.Resources.scissors;
-            this.pictureBox3.Location = new System.Drawing.Point(415, 91);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(178, 154);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.picUserScissors.Image = global::RockPaperScissors_KuotM_.Properties.Resources.scissors;
+            this.picUserScissors.Location = new System.Drawing.Point(415, 91);
+            this.picUserScissors.Name = "picUserScissors";
+            this.picUserScissors.Size = new System.Drawing.Size(178, 154);
+            this.picUserScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUserScissors.TabIndex = 2;
+            this.picUserScissors.TabStop = false;
+            this.picUserScissors.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // lblStateOptions
             // 
@@ -97,35 +101,35 @@
             this.lblStateCpuChoice.TabIndex = 4;
             this.lblStateCpuChoice.Text = "Computer\'s choice:";
             // 
-            // pictureBox4
+            // picCPUScissors
             // 
-            this.pictureBox4.Image = global::RockPaperScissors_KuotM_.Properties.Resources.scissors;
-            this.pictureBox4.Location = new System.Drawing.Point(415, 300);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(178, 164);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
+            this.picCPUScissors.Image = global::RockPaperScissors_KuotM_.Properties.Resources.scissors;
+            this.picCPUScissors.Location = new System.Drawing.Point(415, 300);
+            this.picCPUScissors.Name = "picCPUScissors";
+            this.picCPUScissors.Size = new System.Drawing.Size(178, 164);
+            this.picCPUScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCPUScissors.TabIndex = 7;
+            this.picCPUScissors.TabStop = false;
             // 
-            // pictureBox5
+            // picCPUPaper
             // 
-            this.pictureBox5.Image = global::RockPaperScissors_KuotM_.Properties.Resources.paper;
-            this.pictureBox5.Location = new System.Drawing.Point(219, 300);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(178, 164);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
+            this.picCPUPaper.Image = global::RockPaperScissors_KuotM_.Properties.Resources.paper;
+            this.picCPUPaper.Location = new System.Drawing.Point(219, 300);
+            this.picCPUPaper.Name = "picCPUPaper";
+            this.picCPUPaper.Size = new System.Drawing.Size(178, 164);
+            this.picCPUPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCPUPaper.TabIndex = 6;
+            this.picCPUPaper.TabStop = false;
             // 
-            // pictureBox6
+            // picCPURock
             // 
-            this.pictureBox6.Image = global::RockPaperScissors_KuotM_.Properties.Resources.rock;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 300);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(180, 164);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.picCPURock.Image = global::RockPaperScissors_KuotM_.Properties.Resources.rock;
+            this.picCPURock.Location = new System.Drawing.Point(12, 300);
+            this.picCPURock.Name = "picCPURock";
+            this.picCPURock.Size = new System.Drawing.Size(180, 164);
+            this.picCPURock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCPURock.TabIndex = 5;
+            this.picCPURock.TabStop = false;
             // 
             // lblStateWinner
             // 
@@ -160,31 +164,43 @@
             this.mniExit.Name = "mniExit";
             this.mniExit.Size = new System.Drawing.Size(152, 22);
             this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(518, 37);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 10;
+            this.btnReset.Text = "Play Again!";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // RockPaperScissorsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 550);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblStateWinner);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picCPUScissors);
+            this.Controls.Add(this.picCPUPaper);
+            this.Controls.Add(this.picCPURock);
             this.Controls.Add(this.lblStateCpuChoice);
             this.Controls.Add(this.lblStateOptions);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.picRock);
+            this.Controls.Add(this.picUserScissors);
+            this.Controls.Add(this.picUserPaper);
+            this.Controls.Add(this.picUserRock);
             this.Controls.Add(this.mnuRockPaperScissors);
             this.MainMenuStrip = this.mnuRockPaperScissors;
             this.Name = "RockPaperScissorsForm";
             this.Text = "Rock Paper Scissors!";
-            ((System.ComponentModel.ISupportInitialize)(this.picRock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Load += new System.EventHandler(this.RockPaperScissorsForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picUserRock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserPaper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserScissors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUScissors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUPaper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPURock)).EndInit();
             this.mnuRockPaperScissors.ResumeLayout(false);
             this.mnuRockPaperScissors.PerformLayout();
             this.ResumeLayout(false);
@@ -194,18 +210,19 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picRock;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picUserRock;
+        private System.Windows.Forms.PictureBox picUserPaper;
+        private System.Windows.Forms.PictureBox picUserScissors;
         private System.Windows.Forms.Label lblStateOptions;
         private System.Windows.Forms.Label lblStateCpuChoice;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picCPUScissors;
+        private System.Windows.Forms.PictureBox picCPUPaper;
+        private System.Windows.Forms.PictureBox picCPURock;
         private System.Windows.Forms.Label lblStateWinner;
         private System.Windows.Forms.MenuStrip mnuRockPaperScissors;
         private System.Windows.Forms.ToolStripMenuItem mniFile;
         private System.Windows.Forms.ToolStripMenuItem mniExit;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 
