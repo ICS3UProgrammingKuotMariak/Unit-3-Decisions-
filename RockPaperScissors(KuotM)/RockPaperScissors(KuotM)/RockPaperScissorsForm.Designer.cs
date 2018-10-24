@@ -1,6 +1,6 @@
 ﻿namespace RockPaperScissors_KuotM_
 {
-    partial class RockPaperScissorsForm
+    partial class frmRockPaperScissors
     {
         /// <summary>
         /// Required designer variable.
@@ -162,7 +162,7 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
@@ -174,8 +174,9 @@
             this.btnReset.TabIndex = 10;
             this.btnReset.Text = "Play Again!";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // RockPaperScissorsForm
+            // frmRockPaperScissors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,7 +193,7 @@
             this.Controls.Add(this.picUserRock);
             this.Controls.Add(this.mnuRockPaperScissors);
             this.MainMenuStrip = this.mnuRockPaperScissors;
-            this.Name = "RockPaperScissorsForm";
+            this.Name = "frmRockPaperScissors";
             this.Text = "Rock Paper Scissors!";
             this.Load += new System.EventHandler(this.RockPaperScissorsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picUserRock)).EndInit();

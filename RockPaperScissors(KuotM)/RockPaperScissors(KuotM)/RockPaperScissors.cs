@@ -16,7 +16,7 @@ namespace RockPaperScissors_KuotM_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RockPaperScissorsForm());
+            Application.Run(new frmRockPaperScissors());
         }
     }
 }
