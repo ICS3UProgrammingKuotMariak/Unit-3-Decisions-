@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Kuot Mariak
+ * Created on: 16-10-2018
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #18 - Rock, Paper, Scissors
+ * Rock Paper Scissors
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
