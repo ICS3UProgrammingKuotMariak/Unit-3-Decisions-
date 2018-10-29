@@ -88,5 +88,11 @@
   <ItemGroup>
     <None Include="Resources\scissors.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ta Da.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You lose.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

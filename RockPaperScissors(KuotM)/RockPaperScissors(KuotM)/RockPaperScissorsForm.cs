@@ -50,6 +50,9 @@ namespace RockPaperScissors_KuotM_
                 picCPUScissors.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You Lose!";
+                System.IO.Stream lose = Properties.Resources.You_lose;
+                System.Media.SoundPlayer loser = new System.Media.SoundPlayer(lose);
+                loser.Play();
             }
             else
             {
@@ -57,6 +60,9 @@ namespace RockPaperScissors_KuotM_
                 picCPURock.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You win!";
+                System.IO.Stream win = Properties.Resources.Ta_Da;
+                System.Media.SoundPlayer winner = new System.Media.SoundPlayer(win);
+                winner.Play();
             }
         }
 
@@ -79,6 +85,9 @@ namespace RockPaperScissors_KuotM_
                 picCPUPaper.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You Lose!";
+                System.IO.Stream lose = Properties.Resources.You_lose;
+                System.Media.SoundPlayer loser = new System.Media.SoundPlayer(lose);
+                loser.Play();
             }
             else
             {
@@ -86,6 +95,9 @@ namespace RockPaperScissors_KuotM_
                 picCPUScissors.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You win!";
+                System.IO.Stream win = Properties.Resources.Ta_Da;
+                System.Media.SoundPlayer winner = new System.Media.SoundPlayer(win);
+                winner.Play();
             }
 
         }
@@ -109,6 +121,9 @@ namespace RockPaperScissors_KuotM_
                 picCPUScissors.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You Lose!";
+                System.IO.Stream lose = Properties.Resources.You_lose;
+                System.Media.SoundPlayer loser = new System.Media.SoundPlayer(lose);
+                loser.Play();
             }
             else
             {
@@ -116,6 +131,9 @@ namespace RockPaperScissors_KuotM_
                 picCPURock.Hide();
                 lblStateWinner.Show();
                 lblStateWinner.Text = "You win!";
+                System.IO.Stream win = Properties.Resources.Ta_Da;
+                System.Media.SoundPlayer winner = new System.Media.SoundPlayer(win);
+                winner.Play();
             }
 
         }
@@ -137,8 +155,11 @@ namespace RockPaperScissors_KuotM_
 
             // This hides
             lblStateWinner.Hide();
+
+            // This refreshes the form
             this.Refresh();
 
+            // This generates a random number
             Random randomNumberGenerator;
             randomNumberGenerator = new Random();
 

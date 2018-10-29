@@ -89,5 +89,23 @@ namespace RockPaperScissors_KuotM_.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Ta_Da {
+            get {
+                return ResourceManager.GetStream("Ta_Da", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream You_lose {
+            get {
+                return ResourceManager.GetStream("You_lose", resourceCulture);
+            }
+        }
     }
 }
