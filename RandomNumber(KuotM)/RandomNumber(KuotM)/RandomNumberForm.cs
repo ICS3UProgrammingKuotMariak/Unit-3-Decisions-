@@ -19,12 +19,15 @@ namespace RandomNumber_KuotM_
 {
     public partial class RandomNumberForm : Form
     {
+        // This declares the variables
+        int userChoice;
+        int correctAnswer;
+
+
         public RandomNumberForm()
         {
             InitializeComponent();
             // Declares the constants and variables
-            int userChoice;
-            int correctAnswer;
             const int Min_Value = 1;
             const int Max_Value = 10;
 
@@ -47,7 +50,7 @@ namespace RandomNumber_KuotM_
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-
+            
             // This converts the NUD into an int
             userChoice = (int)(nudGuess.Value);
 
@@ -71,6 +74,19 @@ namespace RandomNumber_KuotM_
            
 
            
+        }
+
+        private void mniRandomize_Click(object sender, EventArgs e)
+        {
+            // Declares the constants and variables
+            const int Min_Value = 1;
+            const int Max_Value = 10;
+
+            // This generates a random number
+            Random randomNumberGenerator = new Random();
+            correctAnswer = randomNumberGenerator.Next(Min_Value, Max_Value + 1);
+
+            this.Refresh();
         }
     }
 }

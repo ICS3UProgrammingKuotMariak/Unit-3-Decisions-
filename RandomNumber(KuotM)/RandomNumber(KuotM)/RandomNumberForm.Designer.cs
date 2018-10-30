@@ -35,6 +35,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCheck = new System.Windows.Forms.Button();
             this.lblStateAnswer = new System.Windows.Forms.Label();
+            this.mniOptions = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniRandomize = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.nudGuess)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +60,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.mniOptions});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(410, 24);
@@ -100,6 +103,21 @@
             this.lblStateAnswer.Text = "Answer";
             this.lblStateAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // mniOptions
+            // 
+            this.mniOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniRandomize});
+            this.mniOptions.Name = "mniOptions";
+            this.mniOptions.Size = new System.Drawing.Size(61, 20);
+            this.mniOptions.Text = "Options";
+            // 
+            // mniRandomize
+            // 
+            this.mniRandomize.Name = "mniRandomize";
+            this.mniRandomize.Size = new System.Drawing.Size(152, 22);
+            this.mniRandomize.Text = "Randomize";
+            this.mniRandomize.Click += new System.EventHandler(this.mniRandomize_Click);
+            // 
             // RandomNumberForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +149,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label lblStateAnswer;
+        private System.Windows.Forms.ToolStripMenuItem mniOptions;
+        private System.Windows.Forms.ToolStripMenuItem mniRandomize;
     }
 }
 
