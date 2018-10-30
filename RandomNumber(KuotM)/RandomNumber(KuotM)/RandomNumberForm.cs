@@ -63,11 +63,17 @@ namespace RandomNumber_KuotM_
             {
                 lblStateAnswer.Show();
                 lblStateAnswer.Text = Convert.ToString("You win!");
+                System.IO.Stream win = Properties.Resources.Ta_Da;
+                System.Media.SoundPlayer winner = new System.Media.SoundPlayer(win);
+                winner.Play();
             }
             else
             {
                 lblStateAnswer.Show();
                 lblStateAnswer.Text = Convert.ToString("You lose");
+                System.IO.Stream lose = Properties.Resources.You_lose;
+                System.Media.SoundPlayer loser = new System.Media.SoundPlayer(lose);
+                loser.Play();
             }
 
             
