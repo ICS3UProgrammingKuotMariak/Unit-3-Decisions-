@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Kuot Mariak
+ * Created on: 31-10-2018
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #23 - Factorial with For loop
+ * Factorial For
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -16,5 +16,15 @@ namespace Unicode_KuotM_
         {
             InitializeComponent();
         }
+
+        private void frmUnicode_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
