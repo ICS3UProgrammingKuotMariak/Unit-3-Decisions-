@@ -29,29 +29,35 @@
         private void InitializeComponent()
         {
             this.lblChangeVisibility = new System.Windows.Forms.Label();
-            this.lstChangeFont = new System.Windows.Forms.ListBox();
+            this.lstDefault = new System.Windows.Forms.ListBox();
             this.btnChangeColour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblChangeVisibility
             // 
+            this.lblChangeVisibility.BackColor = System.Drawing.SystemColors.Control;
             this.lblChangeVisibility.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChangeVisibility.Location = new System.Drawing.Point(205, 45);
             this.lblChangeVisibility.Name = "lblChangeVisibility";
             this.lblChangeVisibility.Size = new System.Drawing.Size(164, 79);
             this.lblChangeVisibility.TabIndex = 1;
             this.lblChangeVisibility.Text = "Change Text";
+            this.lblChangeVisibility.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblChangeVisibility.Click += new System.EventHandler(this.lblChangeText_Click);
             // 
-            // lstChangeFont
+            // lstDefault
             // 
-            this.lstChangeFont.FormattingEnabled = true;
-            this.lstChangeFont.Location = new System.Drawing.Point(12, 166);
-            this.lstChangeFont.Name = "lstChangeFont";
-            this.lstChangeFont.Size = new System.Drawing.Size(247, 147);
-            this.lstChangeFont.TabIndex = 2;
-            this.lstChangeFont.Tag = "";
-            this.lstChangeFont.SelectedIndexChanged += new System.EventHandler(this.lstChangeFont_SelectedIndexChanged);
+            this.lstDefault.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstDefault.FormattingEnabled = true;
+            this.lstDefault.ItemHeight = 24;
+            this.lstDefault.Items.AddRange(new object[] {
+            "Return to Default"});
+            this.lstDefault.Location = new System.Drawing.Point(12, 166);
+            this.lstDefault.Name = "lstDefault";
+            this.lstDefault.Size = new System.Drawing.Size(247, 124);
+            this.lstDefault.TabIndex = 2;
+            this.lstDefault.Tag = "";
+            this.lstDefault.SelectedIndexChanged += new System.EventHandler(this.lstDefault_SelectedIndexChanged);
             // 
             // btnChangeColour
             // 
@@ -69,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 325);
             this.Controls.Add(this.btnChangeColour);
-            this.Controls.Add(this.lstChangeFont);
+            this.Controls.Add(this.lstDefault);
             this.Controls.Add(this.lblChangeVisibility);
             this.Name = "frmControlObjects";
             this.Text = "Control Objects";
@@ -80,7 +86,7 @@
 
         #endregion
         private System.Windows.Forms.Label lblChangeVisibility;
-        private System.Windows.Forms.ListBox lstChangeFont;
+        private System.Windows.Forms.ListBox lstDefault;
         private System.Windows.Forms.Button btnChangeColour;
     }
 }

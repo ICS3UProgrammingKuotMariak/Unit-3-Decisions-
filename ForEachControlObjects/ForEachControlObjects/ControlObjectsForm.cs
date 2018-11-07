@@ -20,6 +20,7 @@ namespace ForEachControlObjects
     public partial class frmControlObjects : Form
     {
         Font Sans = new Font("Comic Sans MS", 20, FontStyle.Italic);
+        Font Default = new Font("Microsoft Sans Serif", 14, FontStyle.Regular);
 
         public frmControlObjects()
         {
@@ -48,13 +49,33 @@ namespace ForEachControlObjects
             }
         }
 
-        private void lstChangeFont_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstDefault_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            foreach (Control DefaultControl in this.Controls)
+            {
+                DefaultControl.BackColor = SystemColors.Window;
+                DefaultControl.ForeColor = SystemColors.WindowText;
+                DefaultControl.Font = Default;
+
+                if (DefaultControl.GetType() == typeof(Label))
+                {
+                    DefaultControl.BackColor = SystemColors.Control;
+                    DefaultControl.ForeColor = SystemColors.ControlText;
+                    DefaultControl.Font = Default;
+                }
+                else if (DefaultControl.GetType() == typeof(Button))
+                {
+                    DefaultControl.BackColor = SystemColors.Control;
+                    DefaultControl.ForeColor = SystemColors.ControlText;
+                    DefaultControl.Font = Default;
+                }
+                
+            }
         }
 
         private void btnChangeColour_Click(object sender, EventArgs e)
         {
+            // This Foreach loop changes the colour of the Label and Listbox when the 
             foreach (Control ColourControl in this.Controls)
             {
                 ColourControl.BackColor = Color.Green;
