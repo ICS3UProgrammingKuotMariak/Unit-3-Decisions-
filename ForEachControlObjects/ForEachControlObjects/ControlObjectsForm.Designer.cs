@@ -79,7 +79,6 @@
             this.Controls.Add(this.lblChangeVisibility);
             this.Name = "frmControlObjects";
             this.Text = "Control Objects";
-            this.Load += new System.EventHandler(this.frmControlObjects_Load);
             this.ResumeLayout(false);
 
         }

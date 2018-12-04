@@ -27,11 +27,6 @@ namespace ForEachControlObjects
             InitializeComponent();
         }
 
-        private void frmControlObjects_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblChangeText_Click(object sender, EventArgs e)
         {
             foreach (Control FontControl in this.Controls)
@@ -51,6 +46,7 @@ namespace ForEachControlObjects
 
         private void lstDefault_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // This Foreach loop changes the colour and font of the all objects back to default
             foreach (Control DefaultControl in this.Controls)
             {
                 DefaultControl.BackColor = SystemColors.Window;
