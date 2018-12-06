@@ -27,10 +27,13 @@ namespace RunningAvg_KuotM_
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             double mark = Convert.ToDouble(txtNum.Text);
-            
-            if (mark > 0)
-            {
+            double total = 0;
+            int average;
 
+
+            if (mark > 0 && mark < 100)
+            {
+                total = mark + total;
             }
 
 
