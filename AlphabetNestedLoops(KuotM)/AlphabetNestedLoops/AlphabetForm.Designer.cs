@@ -1,6 +1,6 @@
-﻿namespace PerfectSquares_KuotM_
+﻿namespace AlphabetNestedLoops
 {
-    partial class frmPerfectSquares
+    partial class frmAlphabet
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmPerfectSquares
+            // frmAlphabet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 335);
-            this.Name = "frmPerfectSquares";
-            this.Text = "Perfect Squares";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "frmAlphabet";
+            this.Text = "Alphabet Nested Loops";
             this.ResumeLayout(false);
 
         }
